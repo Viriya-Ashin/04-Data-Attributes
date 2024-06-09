@@ -1,30 +1,34 @@
-# 🏗️ Use Data Attributes to Display Hidden Number
+# HTML Structure for Interactive Boxes
 
-Work with a partner to implement the following user story:
+This HTML document creates a simple interactive interface where clicking on a box reveals a hidden number.
 
-* As a player, I want to click on a card and view the hidden number.
+- **Meta Tags**: Ensure proper character encoding, viewport settings, and compatibility with IE.
+- **External Resources**: Links to a CSS stylesheet and a JavaScript file.
+- **Content**: 
+  - A main heading prompts user interaction.
+  - A container holds six boxes, each with `data-number` and `data-state` attributes to manage their state and content dynamically.
 
-## Acceptance Criteria
+# CSS Styling for Interactive Boxes
 
-* It is done when I click on a card and the hidden number is revealed.
+This CSS code provides styling for a webpage with interactive boxes, ensuring a consistent and visually appealing design.
 
-* It is done when the number is visible if the card is clicked.
+- **Universal Selector**: Applies `box-sizing: border-box` to all elements for consistent sizing.
+- **Body Styling**: Uses a sans-serif font and sets a light yellow background.
+- **Heading Styling**: Centers the text, adds top margin, letter spacing, and sets a dark blue color.
+- **Container Styling**: Sets the width to 80% of the viewport and centers it with auto margins.
+- **Box Styling**: Floats the boxes, sets dimensions, margins, background color, border-radius, text alignment, and other visual properties.
+- **Responsive Design**: Adjusts the box width for screens smaller than 740px.
 
-## Assets
+# JavaScript for Interactive Box Click Event
 
-The following image demonstrates the web application's appearance and functionality:
+This JavaScript code enables interactive functionality for boxes within a container, allowing users to reveal or hide numbers on click.
 
-![Six cards appear in a grid, with the numbers 1, 3, and 5 displayed on three of the cards while the remaining three appear blank.](./images/01-screenshot.png)
-
----
-
-## 💡 Hints
-
-How can we use the `dataset` object to access an element's data attributes?
-
-## 🏆 Bonus
-
-If you have completed this activity, work through the following challenge with your partner to further your knowledge:
+- **Container Selection**: Selects the container element that holds the boxes.
+- **Event Listener**: Adds a click event listener to the container.
+- **Event Handling**: 
+  - Checks if the clicked element is a box.
+  - Toggles the box state between hidden and visible.
+  - Displays the number when the box is visible and hides it when the box is hidden.
 
 * We have learned `getAttribute()` and `setAttribute()`. What other methods can you use to access an element's attributes?
 In addition to getAttribute() and setAttribute(), there are several other methods hasAttribute(name): Checks if an element has a specific attribute.
@@ -33,7 +37,3 @@ attributes property: Provides a live collection of all attributes of an element.
 Direct property access: Access standard attributes directly (e.g., element.id, element.className).
 dataset property: Access custom data attributes (data-*).
 
-Use [Google](https://www.google.com) or another search engine to research this.
-
----
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
